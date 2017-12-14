@@ -100,7 +100,7 @@ export default class GlobalHeader extends PureComponent {
           type={collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={this.toggle}
         />
-        <div className={styles.right}>
+        <div className={styles.right} style={{ display: 'none' }}>
           <HeaderSearch
             className={`${styles.action} ${styles.search}`}
             placeholder="站内搜索"

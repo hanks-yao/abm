@@ -16,6 +16,24 @@ export const getNavData = app => [
     path: '/',
     children: [
       {
+        name: 'Tables',
+        path: 'tables',
+        icon: 'table',
+        component: dynamicWrapper(app, ['rule'], () => import('../routes/Campaign')),
+      },
+      {
+        name: 'Form',
+        path: 'create',
+        icon: 'form',
+        component: dynamicWrapper(app, ['form'], () => import('../routes/Campaign/Create')),
+      },
+      {
+        name: 'Reports',
+        path: 'report',
+        icon: 'file',
+        component: dynamicWrapper(app, ['rule'], () => import('../routes/Report/Account')),
+      },
+      {
         name: 'Dashboard',
         icon: 'dashboard',
         path: 'dashboard',

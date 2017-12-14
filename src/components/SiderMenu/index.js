@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import { Link } from 'dva/router';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo_01.png';
 import styles from './index.less';
 
 const { Sider } = Layout;
@@ -112,15 +112,15 @@ export default class SiderMenu extends PureComponent {
         trigger={null}
         collapsible
         collapsed={collapsed}
-        breakpoint="md"
+        breakpoint="xl"
         onCollapse={this.onCollapse}
-        width={256}
+        width={200}
         className={styles.sider}
       >
         <div className={styles.logo}>
           <Link to="/">
             <img src={logo} alt="logo" />
-            <h1>Ant Design Pro</h1>
+            <h1>Bilin Tech</h1>
           </Link>
         </div>
         <Menu
